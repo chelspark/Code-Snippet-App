@@ -1,0 +1,460 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* Navigation bar styling */
+/*
+nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  z-index: 999; /* Keeps the nav bar on top of other content 
+  height: 50px; /* Explicit height for the navbar 
+    /* Center the items using flexbox 
+    display: flex;
+    justify-content: center; /* This centers the items horizontally 
+    align-items: center; /* This centers the items vertically 
+}*/
+/*
+nav li {
+  float: left;
+  margin: 0 15px; /* Optional: Adds some spacing between the nav items 
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* Optional: Adjust the login button position to stay in the navigation flow */
+/*
+.login-button {
+  margin-left: auto; /* Pushes the login button to the far right 
+}
+*/
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #ffeb3b;
+}
+
+/* snippets */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+}
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container-inner {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading styling for login */
+.login-container-inner h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input container */
+.input-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styling for login form */
+.login-container-inner label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input field styling for login form */
+.login-container-inner input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+.login-container-inner input:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.login-container-inner button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login-container-inner button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.login-container-inner .error {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+/* Container for the register form */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container-inner {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading styling for register */
+.register-container-inner h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input container */
+.input-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styling for register form */
+.register-container-inner label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input field styling for register form */
+.register-container-inner input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+.register-container-inner input:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.register-container-inner button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.register-container-inner button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.register-container-inner .error {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Success message styling */
+.register-container-inner .success {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Input container for dropdown and editor */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.snippet-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: white;
+}
+
+.snippet-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.snippet-form select:focus {
+  border-color: #007bff;
+}
+
+/* CodeMirror styling */
+.CodeMirror {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  overflow-y: auto; /* Allow scrolling */
+}
+
+/* Button styling */
+.submit-button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Snippets list container */
+.snippets-list-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.snippets-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.snippet-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.snippet-item h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+pre {
+  background-color: #2d2d2d; /* Background for code */
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+code {
+  color: white; /* Code text color */
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.copy-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.main-container {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.snippet-item {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;  /* Ensure it's above other content */
+}
+.snippet-card {
+  flex: 1 1 300px;  /* Ensures each card has a consistent width of 300px */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgb(30, 30, 30);
+  color: inherit;
+  min-height: 150px;  /* Set a minimum height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transform: perspective(1000px) rotateX(2deg) rotateY(1deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.snippet-card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.snippet-card pre.hljs, 
+.snippet-card code.hljs {
+  background-color: #282a36 !important;
+  color: #f8f8f2 !important;
+}
+.snippets-container {
+  background-color: #1e1e1e; /* Dark background to match the theme */
+  color: #ffffff; /* Light text color for visibility */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Container for the snippets page */
+.snippets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Form container */
+.snippets-form-container {
+  background-color: rgb(30, 30, 30);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.snippets-form-container {
+  background-color: rgb(30, 30, 30); /* Ensures the form has a dark background */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.snippet-form {
+  width: 100%;
+}
+/* Code blocks */
+.code-snippet {
+  font-family: 'Fira Code', monospace;
+}

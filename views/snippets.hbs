@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Submit Snippet</h1>
+  <form action="/snippets" method="POST">
+    <label for="snippet">Enter JavaScript Code Snippet:</label><br>
+    <textarea id="snippet" name="snippet" rows="10" cols="50" placeholder="Type your code here..."></textarea><br>
+    <button type="submit">Submit Snippet</button>
+  </form>
+
+  <div class="submittedsnippets">
+    <h2>Submitted Snippets</h2>
+    <ul>
+      {{#each snippets}}
+        <li>
+          <pre><code>{{this.code}}</code></pre>
+        </li>
+      {{else}}
+        <p>No snippets submitted yet.</p>
+      {{/each}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.snippets-container {
+    background-color: rgb(30, 30, 30);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .snippets-form-container {
+    background-color: rgb(30, 30, 30); /* Ensures the form has a dark background */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .snippets-form-container h2,
+  .snippets-list-container h3 {
+    color: #ffffff;
+  }
+  
+  .dark-input {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #777777;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .dark-button {
+    background-color: #777777;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .snippet-card {
+    background-color: rgb(30, 30, 30);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transform: perspective(1000px) rotateX(2deg) rotateY(1deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .snippet-card:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
